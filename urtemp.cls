@@ -9,9 +9,7 @@
   % 2) 标题、正文的字号、行距按照教务部要求调整
   % 3) 增加了代码块
   % 4) 首页调整为教务部要求的格式
-  % 5) 调整了表格格式，参照北京大学物理学院近代物理实验报告模板
-  % https://github.com/CastleStar14654/PKUMpLtX/releases
-  % 6) 导入mhchem
+  % 5) 导入mhchem和一些缩写
   %   by Kailin Tang
   % 以下为原注释
 
