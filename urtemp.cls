@@ -130,7 +130,8 @@ The LaTeX template for Experiment Report in Modern Physics of Tsinghua Universit
 \newcommand{\jj}{\mathrm{j}}
 \newcommand{\ii}{\mathrm{i}}
 \newcommand{\ee}{\mathrm{e}}
- 
+% 公式以节为基础编号
+\numberwithin{equation}{section}
 
 \usepackage{geometry}
 \newgeometry{
