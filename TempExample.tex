@@ -196,7 +196,7 @@ U/V & I/mA & v/km·h$^{-1}$ & x/mm & p/MPa \\ \hline
 %  参考文献按apsrev4-2, 也可更改其他格式
 %  参考文献在正文中的引用方法: \cite{bib文件条目的第一行}
 
-\renewcommand\refname{\heiti\wuhao\centerline{参考文献}\global\def\refname{参考文献}}
+\renewcommand\refname{\heiti\xiaosihao\centerline{参考文献}\global\def\refname{参考文献}}
 \vskip 12pt
 
 \let\OLDthebibliography\thebibliography
@@ -208,9 +208,13 @@ U/V & I/mA & v/km·h$^{-1}$ & x/mm & p/MPa \\ \hline
 
 {
 \renewcommand{\baselinestretch}{0.9}
-\bibliographystyle{gbt7714-numerical}
+\bibliographystyle{unsrt}
 \bibliography{ref.bib}
 }
+
+\setcounter{equation}{0}
+\renewcommand{\theequation}{A.\arabic{equation}}
+% 附录的公式以A开头
 
 \section*{附录}
 
