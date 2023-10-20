@@ -95,17 +95,12 @@
 
 \begin{figure}[H]
   \centering
-  \begin{minipage}{0.4\linewidth}
-    \raggedright
-      \includegraphics[width=0.5\linewidth]{image/logo1.eps}
-      \label{fig:1.1}
-  \end{minipage}
-  \begin{minipage}{0.4\linewidth}
-    \raggedleft
-      \includegraphics[width=0.5\linewidth]{image/logo1.eps}
-      \label{fig:1.2}
-  \end{minipage}
-  \caption{多图并排, (a) 校徽, (b) 校徽+中英文校名}
+  \label{fig:2.1}\subfigure[第一张图子标题]{
+      \includegraphics[width=0.3\linewidth]{image/logo1.eps}}    
+  \label{fig:2.2}\subfigure[第一张图子标题]{
+        \includegraphics[width=0.3\linewidth]{image/logo2.eps}}
+        
+  \caption{多图并排}\label{fig:2}
 \end{figure}
 
 \subsection{报告中表的规范}
@@ -169,11 +164,11 @@ U/V & I/mA & v/km·h$^{-1}$ & x/mm & p/MPa \\ \hline
 \item 缩写$\ii\ \jj\ \ee$ 
 \end{enumerate} 
 
-\subsection{引用代码示例}
+\subsection{引用代码示例}\label{sec:yinyong}
 
 \lstinputlisting[language=C++]{code/code1.cpp}
 
-大段代码可以放在附录\ref{app1}, 引用章节名\nameref{app1}.
+大段代码可以放在附录\ref{app1}, 引用章节名\nameref{app1}, 引用章节编号\ref{sec:yinyong}节.
 
 \section{结~~论}
 用准确、精炼的语言归纳总结使用的方法以及研究结果. 
@@ -220,7 +215,7 @@ U/V & I/mA & v/km·h$^{-1}$ & x/mm & p/MPa \\ \hline
 
 \subsection*{Appendix 1}\label{app1}
 
-大段的代码放这里.
+大段的代码放这里. 代码中\#开头的注释里不能有等号、下划线、引号.
 
 文件名: code2.py
 \lstinputlisting[language=python]{code/code2.py}
